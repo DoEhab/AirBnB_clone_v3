@@ -1,8 +1,8 @@
-from api.v1.views import app_view
+from api.v1.views import app_views
 from flask import request, jsonify
 
 
-@app_view.route('/status', method=['GET'])
+@app_views.route('/status', method=['GET'])
 def get_status():
     """Get method to return status"""
     if request.method == 'GET':
