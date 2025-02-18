@@ -3,6 +3,8 @@ from api.v1.views import app_views
 from flask import jsonify, request
 from models import storage
 
+"""this file contains API routes"""
+
 
 @app_views.route('/status', methods=['GET'])
 def get_status():
