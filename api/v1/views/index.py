@@ -18,4 +18,4 @@ def get_status():
 def get_stats():
     """Get method to return status"""
     if request.method == 'GET':
-        storage.count()
+        return jsonify(storage.count())
